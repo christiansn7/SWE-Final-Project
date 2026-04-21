@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #0a1628;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #000080;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Pinyon Script', cursive;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #000080;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #1e3a5f;
+}
+
+/* Hero Description/Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    background-color: #000080;
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-text {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Featured Jerseys */
+.featured {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.featured-title {
+    font-size: 2rem;
+    color: #000080;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    text-decoration: none;
+    color: inherit;
+    background-color: #f5f8fc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.product-card:hover {
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    padding: 15px 15px 5px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 500;
+    padding: 0 15px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Jersey Detail Page */
+.jersey-detail {
+    display: flex;
+    gap: 60px;
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jersey-image {
+    flex: 1;
+}
+
+.jersey-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.jersey-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.jersey-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.jersey-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000080;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.jersey-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.jersey-size {
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.size-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.size-select {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Helvetica', Arial, sans-serif;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    padding: 15px 30px;
+    background-color: #000080;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.add-to-cart:hover {
+}
+
+/* Jerseys Page */
+.jerseys-page {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.jerseys-page-title {
+    font-size: 2rem;
+    color: #000080;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Cart Icon */
+.cart-icon {
+    color: #000080;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin-left: auto;
+}
+
+/* Cart Page */
+.cart-section {
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cart-title {
+    font-size: 2rem;
+    color: #000080;
+    margin-bottom: 30px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.empty-cart {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info h3 {
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.cart-item-info p {
+    font-size: 1rem;
+    color: #000080;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.remove-btn {
+    color: #cc0000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.cart-total {
+    padding-top: 20px;
+    text-align: right;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #000080;
+}

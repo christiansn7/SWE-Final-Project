@@ -1,0 +1,56 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Jerseys - Chrispy Throwbacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Chrispy Throwbacks</h1>
+            <nav>
+                <a href="index.php" class="nav-link">Home</a>
+                <a href="jerseys.php" class="nav-link">Jerseys</a>
+            </nav>
+            <a href="cart.php" class="cart-icon">Cart (<?php echo count($_SESSION['cart'] ?? []); ?>)</a>
+        </div>
+    </header>
+
+    <section class="jerseys-page">
+        <h2 class="jerseys-page-title">All Jerseys</h2>
+        <div class="product-grid">
+
+            <a href="jersey1.php" class="product-card">
+                <img src="images/Tracy McGrady Raptors Jersey.jpg" alt="Jersey 1">
+                <h3 class="product-name">Tracy McGrady Classic Raptors Jersey</h3>
+                <p class="product-price">$150.00</p>
+            </a>
+
+            <a href="jersey2.php" class="product-card">
+                <img src="images/Dirk Mavericks Throwback Jersey.jpg" alt="Jersey 2">
+                <h3 class="product-name">Dirk Nowitzki Classic Mavericks Jersey</h3>
+                <p class="product-price">$150.00</p>
+            </a>
+
+            <a href="jersey3.php" class="product-card">
+                <img src="images/Scottie Pippen Bulls Throwback Jersey.jpg" alt="Jersey 3">
+                <h3 class="product-name">Scottie Pippen Classic Bulls Jersey</h3>
+                <p class="product-price">$150.00</p>
+            </a>
+
+            <a href="jersey4.php" class="product-card">
+                <img src="images/Shaquille O'Neal Pinstripe Magic Jersey.jpg" alt="Jersey 4">
+                <h3 class="product-name">Shaquille O'Neal Classic Magic Jersey</h3>
+                <p class="product-price">$150.00</p>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>
