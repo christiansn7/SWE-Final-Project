@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,10 +13,10 @@
         <div class="header-container">
             <h1 class="logo">Chrispy Throwbacks</h1>
             <nav>
-                <a href="index.php" class="nav-link">Home</a>
-                <a href="jerseys.php" class="nav-link">Jerseys</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="jerseys.html" class="nav-link">Jerseys</a>
             </nav>
-            <a href="cart.php" class="cart-icon">Cart (<?php echo count($_SESSION['cart'] ?? []); ?>)</a>
+            <a href="cart.html" class="cart-icon">Cart (0)</a>
         </div>
     </header>
 
@@ -28,7 +27,7 @@
         <div class="jersey-info">
             <h2 class="jersey-title">Shaquille O'Neal Classic Magic Jersey</h2>
             <p class="jersey-price">$150.00</p>
-            <form action="add-to-cart.php" method="POST">
+            <form>
                 <label class="size-label">Size:</label>
                 <select name="size" class="size-select">
                     <option value="S">Small</option>
@@ -36,10 +35,7 @@
                     <option value="L">Large</option>
                     <option value="XL">XL</option>
                 </select>
-                <input type="hidden" name="name" value="Shaquille O&#39;Neal Classic Magic Jersey">
-                <input type="hidden" name="price" value="$150.00">
-                <input type="hidden" name="image" value="images/Shaquille O'Neal Pinstripe Magic Jersey.jpg">
-                <button type="submit" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="add-to-cart">Add to Cart</button>
             </form>
         </div>
     </section>
